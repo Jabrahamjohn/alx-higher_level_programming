@@ -1,189 +1,72 @@
-Project Dir: 0x03-python-data_structures
-Tasks
-
-0. Print a list of integers
-mandatory
-Write a function that prints all integers of a list.
-
-Prototype: def print_list_integer(my_list=[]):
-Format: one integer per line. See example
-You are not allowed to import any module
-You can assume that the list only contains integers
-You are not allowed to cast integers into strings
-You have to use str.format() to print integers0. Print a list of integers
-mandatory
-Write a function that prints all integers of a list.
-
-
-
-1. Secure access to an element in a list
-mandatory
-Write a function that retrieves an element from a list like in C.
-
-Prototype: def element_at(my_list, idx):
-If idx is negative, the function should return None
-If idx is out of range (> of number of element in my_list), the function should return None
-You are not allowed to import any module
-You are not allowed to use try/except
-
-
-
-
-2. Replace element
-mandatory
-Write a function that replaces an element of a list at a specific position (like in C).
-
-Prototype: def replace_in_list(my_list, idx, element):
-If idx is negative, the function should not modify anything, and returns the original list
-If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
-You are not allowed to import any module
-You are not allowed to use try/except
-
-
-
-
-3. Print a list of integers... in reverse!
-mandatory
-Write a function that prints all integers of a list, in reverse order.
-
-Prototype: def print_reversed_list_integer(my_list=[]):
-Format: one integer per line. See example
-You are not allowed to import any module
-You can assume that the list only contains integers
-You are not allowed to cast integers into strings
-You have to use str.format() to print integers
-
-
-
-
-
-4. Replace in a copy
-mandatory
-Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
-
-Prototype: def new_in_list(my_list, idx, element):
-If idx is negative, the function should return a copy of the original list
-If idx is out of range (> of number of element in my_list), the function should return a copy of the original list
-You are not allowed to import any module
-You are not allowed to use try/except
-
-
-
-
-
-5. Can you C me now?
-mandatory
-Write a function that removes all characters c and C from a string.
-
-Prototype: def no_c(my_string):
-The function should return the new string
-You are not allowed to import any module
-You are not allowed to use str.replace()
-
-
-
-
-
-6. Lists of lists = Matrix
-mandatory
-Write a function that prints a matrix of integers.
-
-Prototype: def print_matrix_integer(matrix=[[]]):
-Format: see example
-You are not allowed to import any module
-You can assume that the list only contains integers
-You are not allowed to cast integers into strings
-You have to use str.format() to print integers
-
-
-
-
-
-7. Tuples addition
-mandatory
-Write a function that adds 2 tuples.
-
-Prototype: def add_tuple(tuple_a=(), tuple_b=()):
-Returns a tuple with 2 integers:
-The first element should be the addition of the first element of each argument
-The second element should be the addition of the second element of each argument
-You are not allowed to import any module
-You can assume that the two tuples will only contain integers
-If a tuple is smaller than 2, use the value 0 for each missing integer
-If a tuple is bigger than 2, use only the first 2 integers
-
-
-
-
-
-8. More returns!
-mandatory
-Write a function that returns a tuple with the length of a string and its first character.
-
-Prototype: def multiple_returns(sentence):
-If the sentence is empty, the first character should be equal to None
-You are not allowed to import any module
-
-
-
-
-9. Find the max
-mandatory
-Write a function that finds the biggest integer of a list.
-
-Prototype: def max_integer(my_list=[]):
-If the list is empty, return None
-You can assume that the list only contains integers
-You are not allowed to import any module
-You are not allowed to use the builtin max()
-
-
-
-
-10. Only by 2
-mandatory
-Write a function that finds all multiples of 2 in a list.
-
-Prototype: def divisible_by_2(my_list=[]):
-Return a new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
-The new list should have the same size as the original list
-You are not allowed to import any module
-
-
-
-
-
-11. Delete at
-mandatory
-Write a function that deletes the item at a specific position in a list.
-
-Prototype: def delete_at(my_list=[], idx=0):
-If idx is negative or out of range, nothing change (returns the same list)
-You are not allowed to use pop()
-You are not allowed to import any module
-
-
-
-
-12. Switch
-mandatory
-Complete the source code in order to switch value of a and b
-
-You can find the source code here
-Your code should be inserted where the comment is (line 4)
-Your program should be exactly 5 lines long
-
-
-
-
-13. Linked list palindrome
-mandatory
-Technical interview preparation:
-
-You are not allowed to google anything
-Whiteboard first
-Write a function in C that checks if a singly linked list is a palindrome.
-
-Prototype: int is_palindrome(listint_t **head);
-Return: 0 if it is not a palindrome, 1 if it is a palindrome
-An empty list is considered a palindrome
+<div class="panel-body">
+    <h2>Resources</h2>
+
+<p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><a href="/rltoken/VarQbHxfmbnpGnaGp3Nb_A" title="3.1.3. Lists" target="_blank">3.1.3. Lists</a> </li>
+<li><a href="/rltoken/2aa8Mp-V2eSieGeX3OX8yQ" title="Data structures" target="_blank">Data structures</a> (<em>until <code>5.3. Tuples and Sequences</code> included</em>)</li>
+<li><a href="/rltoken/BX2_CuHj1sq4eYGiXbCYSg" title="Learn to Program 6 : Lists" target="_blank">Learn to Program 6 : Lists</a> </li>
+</ul>
+
+<h2>Learning Objectives</h2>
+
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/qZrNhvUqi5zcqE4cMFGU6Q" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+
+<h3>General</h3>
+
+<ul>
+<li>Why Python programming is awesome</li>
+<li>What are lists and how to use them</li>
+<li>What are the differences and similarities between strings and lists</li>
+<li>What are the most common methods of lists and how to use them</li>
+<li>How to use lists as stacks and queues</li>
+<li>What are list comprehensions and how to use them</li>
+<li>What are tuples and how to use them</li>
+<li>When to use tuples versus lists</li>
+<li>What is a sequence</li>
+<li>What is tuple packing</li>
+<li>What is sequence unpacking</li>
+<li>What is the <code>del</code> statement and how to use it</li>
+</ul>
+
+<h3>Copyright - Plagiarism</h3>
+
+<ul>
+<li>You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.</li>
+<li>You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work. </li>
+<li>You are not allowed to publish any content of this project.</li>
+<li>Any form of plagiarism is strictly forbidden and will result in removal from the program.</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<h3>Python Scripts</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/usr/bin/python3</code></li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the pycodestyle (version <code>2.8.*</code>)</li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+</ul>
+
+<h3>C</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)</li>
+<li>All your files should end with a new line</li>
+<li>Your code should use the <code>Betty</code> style. It will be checked using <a href="https://github.com/alx-tools/Betty/blob/master/betty-style.pl" title="betty-style.pl" target="_blank">betty-style.pl</a> and <a href="https://github.com/alx-tools/Betty/blob/master/betty-doc.pl" title="betty-doc.pl" target="_blank">betty-doc.pl</a></li>
+<li>You are not allowed to use global variables</li>
+<li>No more than 5 functions per file</li>
+<li>In the following examples, the <code>main.c</code> files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own <code>main.c</code> files at compilation. Our <code>main.c</code> files might be different from the one shown in the examples</li>
+<li>The prototypes of all your functions should be included in your header file called <code>lists.h</code></li>
+<li>Don’t forget to push your header file</li>
+<li>All your header files should be include guarded</li>
+</ul>
+
+  </div>
