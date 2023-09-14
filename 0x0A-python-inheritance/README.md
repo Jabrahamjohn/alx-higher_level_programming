@@ -1,139 +1,48 @@
-Tasks
-0. Lookup
-mandatory
-Write a function that returns the list of available attributes and methods of an object:
-
-Prototype: def lookup(obj):
-Returns a list object
-You are not allowed to import any module
-
-
-
-
-1. My list
-mandatory
-Write a class MyList that inherits from list:
-
-Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
-You can assume that all the elements of the list will be of type int
-You are not allowed to import any module
-
-
-
-
-2. Exact same object
-mandatory
-Write a function that returns True if the object is exactly an instance of the specified class ; otherwise False.
-
-Prototype: def is_same_class(obj, a_class):
-You are not allowed to import any module
-
-
-
-
-
-3. Same class or inherit from
-mandatory
-Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False.
-
-Prototype: def is_kind_of_class(obj, a_class):
-You are not allowed to import any module
-
-
-
-
-4. Only sub class of
-mandatory
-Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False.
-
-Prototype: def inherits_from(obj, a_class):
-You are not allowed to import any module
-
-
-
-
-
-5. Geometry module
-mandatory
-Write an empty class BaseGeometry.
-
-
-
-
-
-6. Improve Geometry
-mandatory
-Write a class BaseGeometry (based on 5-base_geometry.py).
-
-Public instance method: def area(self): that raises an Exception with the message area() is not implemented
-You are not allowed to import any module
-
-
-
-
-
-
-7. Integer validator
-mandatory
-Write a class BaseGeometry (based on 6-base_geometry.py).
-
-Public instance method: def area(self): that raises an Exception with the message area() is not implemented
-Public instance method: def integer_validator(self, name, value): that validates value:
-you can assume name is always a string
-if value is not an integer: raise a TypeError exception, with the message <name> must be an integer
-if value is less or equal to 0: raise a ValueError exception with the message <name> must be greater than 0
-You are not allowed to import any module
-
-
-
-
-
-
-8. Rectangle
-mandatory
-Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
-
-Instantiation with width and height: def __init__(self, width, height):
-width and height must be private. No getter or setter
-width and height must be positive integers, validated by integer_validator
-
-
-
-
-
-9. Full rectangle
-mandatory
-Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). (task based on 8-rectangle.py)
-
-Instantiation with width and height: def __init__(self, width, height)::
-width and height must be private. No getter or setter
-width and height must be positive integers validated by integer_validator
-the area() method must be implemented
-print() should print, and str() should return, the following rectangle description: [Rectangle] <width>/<height>
-
-
-
-
-
-10. Square #1
-mandatory
-Write a class Square that inherits from Rectangle (9-rectangle.py):
-
-Instantiation with size: def __init__(self, size)::
-size must be private. No getter or setter
-size must be a positive integer, validated by integer_validator
-the area() method must be implemented
-
-
-
-
-
-11. Square #2
-mandatory
-Write a class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py).
-
-Instantiation with size: def __init__(self, size)::
-size must be private. No getter or setter
-size must be a positive integer, validated by integer_validator
-the area() method must be implemented
-print() should print, and str() should return, the square description: [Square] <width>/<height>
+# 0X0A. Python - inheritance
+
+## Resources
+
+<p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><a href="/rltoken/ct-bhZHBxfE-aHYQoAcscQ" title="Inheritance" target="_blank">Inheritance</a> </li>
+<li><a href="/rltoken/qq52YyYhDIbKBneA-u0PKw" title="Multiple inheritance" target="_blank">Multiple inheritance</a> </li>
+<li><a href="/rltoken/RJVbH9PvRlwDkBxcTloVOQ" title="Inheritance in Python" target="_blank">Inheritance in Python</a> </li>
+<li><a href="/rltoken/CFBGj9h1gP3eNLnEm2Ehhg" title="Learn to Program 10 : Inheritance Magic Methods" target="_blank">Learn to Program 10 : Inheritance Magic Methods</a> </li>
+</ul>
+
+## Requirements
+
+### Python Scripts
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/usr/bin/python3</code></li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the pycodestyle (version <code>2.8.*</code>)</li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+</ul>
+
+### Python Test Cases
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files should end with a new line</li>
+<li>All your test files should be inside a folder <code>tests</code></li>
+<li>All your test files should be text files (extension: <code>.txt</code>)</li>
+<li>All your tests should be executed by using this command: <code>python3 -m doctest ./tests/*</code></li>
+<li>All your modules should have a documentation (<code>python3 -c 'print(__import__("my_module").__doc__)'</code>)</li>
+<li>All your classes should have a documentation (<code>python3 -c 'print(__import__("my_module").MyClass.__doc__)'</code>)</li>
+<li>All your functions (inside and outside a class) should have a documentation (<code>python3 -c 'print(__import__("my_module").my_function.__doc__)'</code> and <code>python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'</code>)</li>
+<li>A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)</li>
+<li>We strongly encourage you to work together on test cases, so that you don’t miss any edge case</li>
+</ul>
+
+### Documentation
+
+<ul>
+<li>Do not use the words <code>import</code> or <code>from</code> inside your comments, the checker will think you try to import some modules</li>
+</ul>
