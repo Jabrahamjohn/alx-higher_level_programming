@@ -18,7 +18,7 @@ Enjoy!
 
 <h2>Resources</h2>
 
-<p><strong>Read or watch</strong>:</p>
+<p><strong>Read and watch</strong>:</p>
 
 <ul>
 <li><a href="/rltoken/JsFCs_NBzMAR7-XPAZ9BoA" title="The Python tutorial" target="_blank">The Python tutorial</a> (<em>only the first three chapters below</em>)</li>
